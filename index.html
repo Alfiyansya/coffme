@@ -22,24 +22,24 @@
             </a>
             <ul class="nav-menu">
                 <button id="menu-close-button" class="fas fa-times"></button>
-                
+
                 <li class="nav-item">
                     <a href="#" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">About</a>
+                    <a href="#about" class="nav-link">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Menu</a>
+                    <a href="#menu" class="nav-link">Menu</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Testimonials</a>
+                    <a href="#testimonials" class="nav-link">Testimonials</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Gallery</a>
+                    <a href="#gallery" class="nav-link">Gallery</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Contact</a>
+                    <a href="#contact" class="nav-link">Contact</a>
                 </li>
             </ul>
             <button id="menu-open-button" class="fas fa-bars"></button>
@@ -66,14 +66,15 @@
         </section>
 
         <!-- About Section -->
-         <section class="about-section">
+        <section class="about-section" id="about">
             <div class="section-content">
                 <div class="about-image-wrapper">
                     <img src="images/about-image.jpg" alt="Aboout" class="about-image">
                 </div>
                 <div class="about-details">
                     <h2 class="section-title">About Us</h2>
-                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus repellat id, voluptatum accusantium nihil voluptates.</p>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus repellat id,
+                        voluptatum accusantium nihil voluptates.</p>
                     <div class="social-link-list">
                         <a href="#" class="social-link"> <i class="fa-brands fa-facebook"></i></a>
                         <a href="#" class="social-link"> <i class="fa-brands fa-instagram"></i></a>
@@ -81,10 +82,10 @@
                     </div>
                 </div>
             </div>
-         </section>
-        
+        </section>
+
         <!-- Menu Section -->
-         <section class="menu-section">
+        <section class="menu-section" id="menu">
             <div class="section-content">
                 <h2 class="section-title">Our Menu</h2>
                 <ul class="menu-list">
@@ -132,63 +133,143 @@
                     </li>
                 </ul>
             </div>
-         </section>
+        </section>
         <!-- Testimonials Section -->
-         <section class="testimonials-section">
+        <section class="testimonials-section" id="testimonials">
             <h2 class="section-title">Testimonials</h2>
             <div class="section-content">
                 <div class="slider-container swiper">
-                <div class="slider-wrapper">
-                    <ul class="testimonials-list swiper-wrapper">
-                        <li class="testimonial swiper-slide">
-                            <img src="images/user-1.jpg" alt="User" class="user-image">
-                            <h3 class="name">Sarah Johnson</h3>
-                            <i class="feedback">"Loved the French roast. Perfectly balanced and rich. Will order again!"</i>
-                        </li>
-                        <li class="testimonial swiper-slide">
-                            <img src="images/user-2.jpg" alt="User" class="user-image">
-                            <h3 class="name">James Wilson</h3>
-                            <i class="feedback">"Great espresso blend! Smooth and bold flavor. Fast shipping too!"</i>
-                        </li>
-                        <li class="testimonial swiper-slide">
-                            <img src="images/user-3.jpg" alt="User" class="user-image">
-                            <h3 class="name">Michael Brown</h3>
-                            <i class="feedback">"Fantasric mocha flavor. Fresh and aromatic. Quick Shipping!"</i>
-                        </li>
-                        <li class="testimonial swiper-slide">
-                            <img src="images/user-4.jpg" alt="User" class="user-image">
-                            <h3 class="name">Emily Harris</h3>
-                            <i class="feedback">"Execellent quality! Fresh beans and quick delivery. Highly recommend!"</i>
-                        </li>
-                        <li class="testimonial swiper-slide">
-                            <img src="images/user-5.jpg" alt="User" class="user-image">
-                            <h3 class="name">Anthony Thompson</h3>
-                            <i class="feedback">"Best decaf I've tried! smooth and flavourful. Arrived promptly."</i>
-                        </li>
-                    </ul>
+                    <div class="slider-wrapper">
+                        <ul class="testimonials-list swiper-wrapper">
+                            <li class="testimonial swiper-slide">
+                                <img src="images/user-1.jpg" alt="User" class="user-image">
+                                <h3 class="name">Sarah Johnson</h3>
+                                <i class="feedback">"Loved the French roast. Perfectly balanced and rich. Will order
+                                    again!"</i>
+                            </li>
+                            <li class="testimonial swiper-slide">
+                                <img src="images/user-2.jpg" alt="User" class="user-image">
+                                <h3 class="name">James Wilson</h3>
+                                <i class="feedback">"Great espresso blend! Smooth and bold flavor. Fast shipping
+                                    too!"</i>
+                            </li>
+                            <li class="testimonial swiper-slide">
+                                <img src="images/user-3.jpg" alt="User" class="user-image">
+                                <h3 class="name">Michael Brown</h3>
+                                <i class="feedback">"Fantasric mocha flavor. Fresh and aromatic. Quick Shipping!"</i>
+                            </li>
+                            <li class="testimonial swiper-slide">
+                                <img src="images/user-4.jpg" alt="User" class="user-image">
+                                <h3 class="name">Emily Harris</h3>
+                                <i class="feedback">"Execellent quality! Fresh beans and quick delivery. Highly
+                                    recommend!"</i>
+                            </li>
+                            <li class="testimonial swiper-slide">
+                                <img src="images/user-5.jpg" alt="User" class="user-image">
+                                <h3 class="name">Anthony Thompson</h3>
+                                <i class="feedback">"Best decaf I've tried! smooth and flavourful. Arrived
+                                    promptly."</i>
+                            </li>
+                        </ul>
 
-                    <!-- Pagination -->
-                    <div class="swiper-pagination"></div>
+                        <!-- Pagination -->
+                        <div class="swiper-pagination"></div>
 
-                    <!-- Navigation -->
-                    <div class="swiper-slide-button swiper-button-next"></div>
-                    <div class="swiper-slide-button swiper-button-prev"></div>
+                        <!-- Navigation -->
+                        <div class="swiper-slide-button swiper-button-next"></div>
+                        <div class="swiper-slide-button swiper-button-prev"></div>
+                    </div>
                 </div>
             </div>
-            </div>
-         </section>
+        </section>
 
-         <!-- Gallery Section -->
-          <section class="gallery-section">
+        <!-- Gallery Section -->
+        <section class="gallery-section" id="gallery">
             <h2 class="section-title">Gallery</h2>
             <div class="section-content">
                 <ul class="gallery-list">
                     <li class="gallery-item">
-                        
+                        <img src="images/gallery-1.jpg" alt="Gallery" class="gallery-image">
+                    </li>
+                    <li class="gallery-item">
+                        <img src="images/gallery-2.jpg" alt="Gallery" class="gallery-image">
+                    </li>
+                    <li class="gallery-item">
+                        <img src="images/gallery-3.jpg" alt="Gallery" class="gallery-image">
+                    </li>
+                    <li class="gallery-item">
+                        <img src="images/gallery-4.jpg" alt="Gallery" class="gallery-image">
+                    </li>
+                    <li class="gallery-item">
+                        <img src="images/gallery-5.jpg" alt="Gallery" class="gallery-image">
+                    </li>
+                    <li class="gallery-item">
+                        <img src="images/gallery-6.jpg" alt="Gallery" class="gallery-image">
                     </li>
                 </ul>
             </div>
-          </section>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="section-content">
+                <ul class="contact-info-list">
+                    <li class="contact-info">
+                        <i class="fa-solid fa-location-crosshairs"></i>
+                        <p>123 Campsite Avenue, Wilderness, CA 98765</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-regular fa-envelope"></i>
+                        <p>info@coffeeshopwebsite.com</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>(123) 456-78909</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-solid fa-clock"></i>
+                        <p>Monday - Friday : 9:00 AM - 5:00 PM</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-solid fa-clock"></i>
+                        <p>Saturday: 10:00 AM - 3:00 PM</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-solid fa-clock"></i>
+                        <p>Sunday: Closed</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-solid fa-globe"></i>
+                        <p>www.codingnepalweb.com</p>
+                    </li>
+                </ul>
+                <form action="#" class="contact-form">
+                    <input type="text" placeholder="Your name" class="form-input" required>
+                    <input type="email" placeholder="Your email" class="form-input" required>
+                    <textarea placeholder="Your message" class="form-input" required></textarea>
+                    <button type="submit" class="submit-button">Send</button>
+                </form>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer class="footer-section">
+            <div class="section-content">
+                <p class="copyright-text">&copy; 2025 Coffee Shop</p>
+
+                <div class="social-link-list">
+                    <a href="#" class="social-link"> <i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="social-link"> <i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-link"> <i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+
+                <p class="policy-text">
+                    <a href="#" class="policy-link">Privacy Policy</a>
+                    <span class="separator">·</span>
+                    <a href="#" class="policy-link">Refund Policy</a>
+                </p>
+            </div>
+        </footer>
     </main>
 
     <!-- Linkin Swiper script -->
