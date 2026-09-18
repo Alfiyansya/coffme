@@ -42,6 +42,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 80px;
 }
 
 /* Stylings for whole site */
@@ -293,9 +294,19 @@ header .navbar {
     font-weight: var(--font-weight-semibold);
 }
 
-.menu-section .menu-list .menu-item .text {
+.menu-section .menu-list .menu-item .price {
+    display: inline-block;
+    margin-top: 14px;
     font-size: var(--font-size-m);
+    font-weight: var(--font-weight-bold);
+    color: var(--secondary-color);
+    padding: 6px 16px;
+    border-radius: var(--border-radius-m);
+}
 
+.menu-section .menu-list .menu-item .text {
+    margin: 12px 0;
+    font-size: var(--font-size-m);
 }
 
 /* Testimonials section styling*/
@@ -447,6 +458,18 @@ header .navbar {
 .contact-section .contact-form .submit-button:hover {
     color: var(--white-color);
     background: transparent;
+}
+.contact-section .contact-form .form-status {
+    margin-top: 15px;
+    font-size: var(--font-size-m);
+    font-weight: var(--font-weight-medium);
+    display: none; 
+    transition: 0.3s ease;
+}
+
+.contact-section .contact-form .form-status.success {
+    display: block;
+    color: #2e7d32;
 }
 
 /* Footer section styling */
