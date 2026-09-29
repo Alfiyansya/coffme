@@ -4,7 +4,7 @@ const menuCloseButton = document.querySelector("#menu-close-button");
 const contactForm = document.querySelector(".contact-form");
 const formStatus = document.querySelector(".form-status");
 const submitButton = document.querySelector(".submit-button");
-
+const revealElements = document.querySelectorAll(".reveal");
 
 menuOpenButton.addEventListener("click", () => {
   // Toggle mobile menu visibility
@@ -76,3 +76,23 @@ const swiper = new Swiper('.slider-wrapper', {
     }
   }
 });
+
+const revealCallback = (entries, observer) =>{
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add("visible");
+      observer.unobserve(entry.target);
+    }
+  });
+};
+const revealOptions = {
+  root: null,
+  threshold: 0.15
+}
+const revealObserver = new IntersectionObserver(revealCallback, revealOptions);
+revealElements.forEach(el => revealObserver.observe(el)); 
+
+if(history.scrollRestoration){
+  history.scrollRestoration = 'manual';
+}
+window.scrollTo(0,0);
